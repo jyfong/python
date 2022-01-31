@@ -26,5 +26,5 @@ tripTime = schoolStart - arriveEnd
 print("The length of the trip from stop number", stopNumber, "is", tripTime, "minutes")
 
 ticketPrice = (tripTime // CHARGED_MINS) * CHARGED_RATE + BASE_PRICE
-ticketPriceStr = "$" + str(ticketPrice // BASE_PRICE) + "." + (str(ticketPrice % 100).zfill(2))
+ticketPriceStr = "$" + str(ticketPrice // 100) + "." + (str(ticketPrice % 100).zfill(2))
 print("The cost of the ticket from stop number", stopNumber, "is", ticketPriceStr)
